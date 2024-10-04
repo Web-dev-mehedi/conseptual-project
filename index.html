@@ -10,10 +10,79 @@
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    
+ 
+    <header>
+         <nav class="w-11/12 mx-auto">
+            <div class="navbar bg-base-100">
+                <div class="flex-1">
+                  <a class="btn btn-ghost text-3xl font-extrabold">Hot Gadgets</a>
+                </div>
+                <div class="flex-none">
+                  <div class="dropdown dropdown-end">
+                  
+                   
+                  </div>
+                  <div class="dropdown dropdown-end">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                      <div class="w-10 rounded-full">
+                        <img
+                          alt="Tailwind CSS Navbar component"
+                          src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                      </div>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                      <li>
+                        <a class="justify-between">
+                          Profile
+                          <span class="badge">New</span>
+                        </a>
+                      </li>
+                      <li><a>Settings</a></li>
+                      <li><a>Logout</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+         </nav>
+    </header>
+
+    <main>
+        <section>
+             
+            <div class="hero container mx-auto ">
+                <div class="hero-content text-center">
+                  <div class="py-14">
+                    <h1 class="text-5xl font-bold">Apple Iphone 13 Pro max</h1>
+                    <p class="py-6">
+                      Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem<br>
+                      quasi. In deleniti eaque aut repudiandae et a id nisi.
+                    </p>
+                    <button  class="btn btn-warning px-8">Buy now</button>
+                  </div>
+                </div>
+              </div>
+
+        </section>
+        <!--  -->
+
+        <section class="w-11/12 mx-auto"> 
+            <div class="container mx-auto">
+                <div class="flex justify-center items-center ">
+                    <input type="text" placeholder="Type here" class="bg-slate-100 input border border-slate-200 rounded-none rounded-tl-md rounded-bl-md w-2/5" />
+                    <button onclick="handleSearch()" type="button" class="btn btn-warning rounded-none rounded-tr-md rounded-br-md text-white px-10">Search</button>
+                </div>
+                <div class="w-full mx-auto flex justify-center items-center">
+                    <span id="spinner" class="loading loading-ring loading-lg hidden "></span>
+                </div>
+            </div>
+        </section>
+    </main>
+ 
  
 
-    
+
 
     <script src="script.js"></script>
 </body>
