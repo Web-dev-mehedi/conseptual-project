@@ -70,13 +70,20 @@
         <section class="w-11/12 mx-auto"> 
             <div class="container mx-auto">
                 <div class="flex justify-center items-center ">
-                    <input type="text" placeholder="Type here" class="bg-slate-100 input border border-slate-200 rounded-none rounded-tl-md rounded-bl-md w-2/5" />
+                    <input id="searchInput" type="text" placeholder="Type here" class="bg-slate-100 input border border-slate-200 rounded-none rounded-tl-md rounded-bl-md w-2/5" />
                     <button onclick="handleSearch()" type="button" class="btn btn-warning rounded-none rounded-tr-md rounded-br-md text-white px-10">Search</button>
                 </div>
-                <div class="w-full mx-auto flex justify-center items-center">
+                <div class="w-full mx-auto flex justify-center items-center py-6">
+                    <button onclick="handleShowAll()" class="btn btn-warning text-white ">Show All</button>
                     <span id="spinner" class="loading loading-ring loading-lg hidden "></span>
                 </div>
             </div>
+        </section>
+        <!-- show all data -->
+        <section>
+             <div id="phone-container" class="w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+              
+             </div>
         </section>
     </main>
  
